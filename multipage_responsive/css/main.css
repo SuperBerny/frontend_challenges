@@ -6,6 +6,67 @@
 html {
   font-size: 62.5%; }
 
+.nav {
+  display: inline-block;
+  width: 100%;
+  height: 18rem;
+  background: rgba(59, 19, 84, 0.6); }
+  .nav__container {
+    display: grid;
+    grid-template-columns: 18% 64% 18%;
+    max-width: 60%;
+    height: 100%;
+    margin: 0 auto; }
+  .nav__logo {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 800;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 7rem;
+    white-space: nowrap; }
+    .nav__logo a {
+      font-family: "Open Sans", sans-serif;
+      text-decoration: none;
+      color: white; }
+    .nav__logo a:visited {
+      color: white; }
+  .nav__center ul {
+    width: 100%;
+    height: 100%;
+    margin: 10rem auto;
+    text-align: center; }
+  .nav__links {
+    display: inline-block;
+    width: 12%; }
+    .nav__links a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.3rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      white-space: nowrap; }
+    .nav__links a::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -1px;
+      width: 5rem;
+      height: .2rem;
+      background: linear-gradient(to right, #fa9e1b, #8d4fff);
+      opacity: 1; }
+  .nav__right {
+    margin-top: 10rem;
+    text-align: center; }
+    .nav__right i {
+      font-size: 2rem;
+      color: white;
+      transform: scaleX(-1); }
+    .nav__right i:hover {
+      color: #fa9e1c; }
+
 .topbar {
   display: block;
   position: fixed;
@@ -17,7 +78,7 @@ html {
   font-weight: 400;
   text-transform: uppercase; }
   .topbar__container {
-    max-width: 65%;
+    max-width: 60%;
     margin: 0 auto; }
   .topbar__left {
     float: left;
