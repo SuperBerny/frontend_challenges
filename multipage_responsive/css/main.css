@@ -2,3 +2,50 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.topbar {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3.5rem;
+  background: #350a4e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .topbar__container {
+    max-width: 65%;
+    margin: 0 auto; }
+  .topbar__left {
+    float: left;
+    width: 30rem; }
+  .topbar__phone {
+    float: left;
+    padding-top: 1.2rem;
+    font-size: 1rem;
+    color: white; }
+  .topbar__social {
+    float: right; }
+  .topbar__ul {
+    float: right; }
+  .topbar__list-item {
+    display: inline-block;
+    padding: 1.2rem 1rem; }
+    .topbar__list-item i {
+      font-size: 1.4rem;
+      color: white; }
+    .topbar__list-item i:hover {
+      color: #fa9e1c; }
+  .topbar__right {
+    float: right;
+    padding: 1rem;
+    color: white;
+    font-weight: 600; }
+    .topbar__right a {
+      text-decoration: none;
+      color: inherit; }
+    .topbar__right a:hover {
+      color: #fa9e1c; }
