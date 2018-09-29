@@ -1,5 +1,24 @@
 .nav {
-  display: inline-block;
   background: rgba($primary-purple, 0.6);
+  width: 100%;
+  height: 14.4rem; 
 
+  &__container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    width: 100%;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+  }
 }
