@@ -1,65 +1,7 @@
 .topbar {
   display: inline-block;
+  background: $primary-purple;
   width: 100%;
-  height: 3.5rem;
-  background:$primary-purple;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-
-  &__container {
-    max-width: 60%;
-    margin: 0 auto;
-  }
-
-  &__left {
-    float: left;
-    width: 30rem;
-  }
-
-  &__phone {
-    float: left;
-    padding-top: 1.1rem;
-    font-size: 1rem;
-    color: white;
-  }
-
-  &__social {
-    float: right;
-  }
-
-  &__ul {
-    float: right;
-    height: inherit;
-  }
-
-  &__list-item {
-    display: inline-block;
-    padding: 1.1rem 1rem;
-
-    i {
-      font-size: 1.4rem;
-      color: white;
-    }
-
-    i:hover {
-      color: $primary-orange;
-    }
-  }
-
-  &__right {
-    float: right;
-    padding: 1rem;
-    color: white;
-    font-weight: 600;
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    a:hover {
-      color: $primary-orange;
-    }
-  }
+  height: 20%;
+  color: white;
 }

@@ -8,105 +8,21 @@ html {
 
 .nav {
   display: inline-block;
-  width: 100%;
-  height: 100%;
-  background: rgba(59, 19, 84, 0.6); }
-  .nav__container {
-    display: grid;
-    grid-template-columns: 23% 64% 12%;
-    max-width: 60%;
-    height: 100%;
-    margin: 0 auto; }
-  .nav__logo {
-    display: inline-block;
-    font-size: 3rem;
-    font-weight: 800;
-    width: 100%;
-    text-transform: uppercase;
-    text-align: left;
-    color: white;
-    margin-top: 4rem;
-    white-space: nowrap; }
-    .nav__logo a {
-      font-family: "Open Sans", sans-serif;
-      text-decoration: none;
-      color: white; }
-    .nav__logo a:visited {
-      color: white; }
-    .nav__logo img {
-      display: inline;
-      vertical-align: bottom; }
-  .nav__center ul {
-    width: 100%;
-    height: 100%;
-    margin: 6rem auto;
-    text-align: center;
-    text-transform: uppercase; }
-  .nav__links {
-    display: inline-block;
-    width: 12%; }
-    .nav__links a {
-      text-decoration: none;
-      color: white;
-      font-size: 1.2rem;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600;
-      white-space: nowrap; }
-  .nav__right {
-    margin-top: 6rem;
-    text-align: right; }
-    .nav__right i {
-      font-size: 2rem;
-      color: white;
-      transform: scaleX(-1); }
-    .nav__right i:hover {
-      color: #fa9e1c; }
+  background: rgba(53, 10, 78, 0.6); }
 
 .topbar {
   display: inline-block;
-  width: 100%;
-  height: 3.5rem;
   background: #350a4e;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase; }
-  .topbar__container {
-    max-width: 60%;
-    margin: 0 auto; }
-  .topbar__left {
-    float: left;
-    width: 30rem; }
-  .topbar__phone {
-    float: left;
-    padding-top: 1.1rem;
-    font-size: 1rem;
-    color: white; }
-  .topbar__social {
-    float: right; }
-  .topbar__ul {
-    float: right;
-    height: inherit; }
-  .topbar__list-item {
-    display: inline-block;
-    padding: 1.1rem 1rem; }
-    .topbar__list-item i {
-      font-size: 1.4rem;
-      color: white; }
-    .topbar__list-item i:hover {
-      color: #fa9e1c; }
-  .topbar__right {
-    float: right;
-    padding: 1rem;
-    color: white;
-    font-weight: 600; }
-    .topbar__right a {
-      text-decoration: none;
-      color: inherit; }
-    .topbar__right a:hover {
-      color: #fa9e1c; }
+  width: 100%;
+  height: 20%;
+  color: white; }
 
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 14rem; }
+  height: 14rem;
+  display: flex; }
+
+.hero_container {
+  display: inline-block; }
