@@ -1,5 +1,9 @@
 .hero_container {
-  display: inline-block;
-  // z-index: -5;
-  // position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+#home_grad_next:hover {
+  fill: linear-gradient(to right, $linear-orange, $linear-purple);
 }

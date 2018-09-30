@@ -12,19 +12,20 @@
   }
 
   &__left {
-    width: 30%;
+    width: 40%;
   }
 
   &__phone {
     width: 30%;
     float: left;
     padding-top: 1rem;
+    // margin-right: 1.5rem
   }
 
   &__social {
     width: 70%;
     float: right;
-    padding-top: .8rem;
+    padding-top: .9rem;
     font-weight: 400;
   }
 
@@ -32,7 +33,7 @@
 
     &-item {
       display: inline-block;
-      width: 14%;
+      width: 12%;
       font-size: 1.2rem;
 
       i {
@@ -53,6 +54,14 @@
     a {
       color: white;
       text-decoration: none;
+    }
+
+    a:first-child {
+      padding-right: .5rem;
+    }
+
+    a:last-child {
+      padding-left: .5rem;
     }
 
     a:hover {

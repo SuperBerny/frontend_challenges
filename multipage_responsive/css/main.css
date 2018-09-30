@@ -9,9 +9,15 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.center-container {
-  max-width: 60%;
+.u-center-container {
+  max-width: 57%;
   margin: 0 auto; }
+
+.carousel {
+  display: inline-block;
+  height: 100%; }
+  .carousel img {
+    width: 1920px; }
 
 .nav {
   background: rgba(53, 10, 78, 0.6);
@@ -19,17 +25,42 @@ html {
   height: 14.4rem; }
   .nav__container {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 75% 5%;
     width: 100%; }
   .nav__logo {
     display: flex;
     align-items: center;
+    text-transform: uppercase;
     white-space: nowrap; }
     .nav__logo a {
       text-decoration: none;
       color: white;
       font-size: 2.8rem;
-      font-weight: 600; }
+      font-weight: 800; }
+  .nav__links {
+    text-align: center; }
+  .nav__list {
+    margin-left: 8rem; }
+    .nav__list-item {
+      display: inline-block;
+      list-style: none;
+      margin-right: 4.5rem;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding-top: 6.2rem; }
+      .nav__list-item a {
+        color: white;
+        text-decoration: none; }
+  .nav__search {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: white;
+    font-size: 1.8rem;
+    transform: scaleX(-1); }
 
 .topbar {
   background: #350a4e;
@@ -42,7 +73,7 @@ html {
     display: flex;
     justify-content: space-between; }
   .topbar__left {
-    width: 30%; }
+    width: 40%; }
   .topbar__phone {
     width: 30%;
     float: left;
@@ -50,11 +81,11 @@ html {
   .topbar__social {
     width: 70%;
     float: right;
-    padding-top: .8rem;
+    padding-top: .9rem;
     font-weight: 400; }
   .topbar__list-item {
     display: inline-block;
-    width: 14%;
+    width: 12%;
     font-size: 1.2rem; }
     .topbar__list-item i {
       color: white; }
@@ -66,14 +97,24 @@ html {
     .topbar__right a {
       color: white;
       text-decoration: none; }
+    .topbar__right a:first-child {
+      padding-right: .5rem; }
+    .topbar__right a:last-child {
+      padding-left: .5rem; }
     .topbar__right a:hover {
       color: #fa9e1c; }
 
 .header {
+  display: block;
+  z-index: 2;
   position: fixed;
   top: 0;
   width: 100%;
   height: 14rem; }
 
 .hero_container {
-  display: inline-block; }
+  height: 100vh;
+  overflow: hidden; }
+
+#home_grad_next:hover {
+  fill: linear-gradient(to right, #fa9e1b, #8d4fff); }

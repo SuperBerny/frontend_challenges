@@ -5,20 +5,60 @@
 
   &__container {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 75% 5%;
     width: 100%;
   }
 
   &__logo {
     display: flex;
     align-items: center;
+    text-transform: uppercase;
+
+    // prevent text wrap
     white-space: nowrap;
     
     a {
       text-decoration: none;
       color: white;
       font-size: 2.8rem;
-      font-weight: 600;
+      font-weight: 800;
     }
+  }
+
+  &__links {
+    text-align: center;
+  }
+
+  &__list {
+    margin-left: 8rem;
+
+    &-item {
+      display: inline-block;
+      list-style: none;
+      // width: 12%;
+      margin-right: 4.5rem;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding-top: 6.2rem;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: white;
+    font-size: 1.8rem;
+
+    // flipping search icon
+    transform: scaleX(-1);
   }
 }
