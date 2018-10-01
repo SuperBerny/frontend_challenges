@@ -22,6 +22,7 @@
       color: white;
       font-size: 2.8rem;
       font-weight: 800;
+      padding-top: 4rem;
     }
   }
 
@@ -35,7 +36,6 @@
     &-item {
       display: inline-block;
       list-style: none;
-      // width: 12%;
       margin-right: 4.5rem;
       color: white;
       font-size: 1.3rem;
@@ -55,10 +55,14 @@
     display: flex;
     align-items: center;
     text-align: right;
-    color: white;
     font-size: 1.8rem;
 
     // flipping search icon
     transform: scaleX(-1);
+
+    a {
+      padding-top: 4.5rem;
+      color: white;
+    }
   }
 }

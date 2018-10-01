@@ -13,11 +13,23 @@ html {
   max-width: 57%;
   margin: 0 auto; }
 
-.carousel {
-  display: inline-block;
-  height: 100%; }
-  .carousel img {
-    width: 1920px; }
+.owl {
+  position: relative; }
+  .owl-carousel {
+    height: 100%;
+    width: 100%; }
+  .owl-item {
+    background-image: url(../img/home_slider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%; }
+  .owl-nav {
+    position: absolute;
+    top: 45rem;
+    left: 0;
+    transform: translate(-45rem, 50%); }
 
 .nav {
   background: rgba(53, 10, 78, 0.6);
@@ -36,7 +48,8 @@ html {
       text-decoration: none;
       color: white;
       font-size: 2.8rem;
-      font-weight: 800; }
+      font-weight: 800;
+      padding-top: 4rem; }
   .nav__links {
     text-align: center; }
   .nav__list {
@@ -58,9 +71,11 @@ html {
     display: flex;
     align-items: center;
     text-align: right;
-    color: white;
     font-size: 1.8rem;
     transform: scaleX(-1); }
+    .nav__search a {
+      padding-top: 4.5rem;
+      color: white; }
 
 .topbar {
   background: #350a4e;
