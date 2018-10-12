@@ -1,0 +1,23 @@
+.slider-btn-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-slider-btn {
+
+  &-left {
+    margin-left: 7rem;
+  }
+
+  &-right {
+    margin-right: 7rem;
+  }
+
+  // svg:hover,stop:first-child {
+  //   stop-color: #ef556d;
+  // }
+
+}

@@ -3,18 +3,19 @@ $(document).ready(function(){
   var owl = $('.owl-carousel');
   
   owl.owlCarousel({
-    items: 1,
-    loop: true,
-    dots: false,
-    nav: false
+    loop:true,
+    items:1,
+    nav:false,
+    smartSpeed: 1200
   });
 
   $('.customNextBtn').click(function(){
     owl.trigger('next.owl.carousel');
   });
-
+  
   $('.customPrevBtn').click(function() {
     owl.trigger('prev.owl.caorusel');
   });
 
 });
+
