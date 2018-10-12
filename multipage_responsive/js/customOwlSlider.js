@@ -1,19 +1,21 @@
 $(document).ready(function(){
 
   var owl = $('.owl-carousel');
+  var customNext = $('.customNextBtn');
+  var customPrev = $('.customPrevBtn');
   
   owl.owlCarousel({
     loop:true,
     items:1,
-    nav:false,
+    nav:true,
     smartSpeed: 1200
   });
 
-  $('.customNextBtn').click(function(){
+ customNext.click(function(){
     owl.trigger('next.owl.carousel');
   });
   
-  $('.customPrevBtn').click(function() {
+  customPrev.click(function() {
     owl.trigger('prev.owl.caorusel');
   });
 

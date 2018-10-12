@@ -62,8 +62,7 @@ html {
 .owl-carousel {
   height: 100%;
   width: 100%;
-  position: relative;
-  z-index: -1; }
+  position: relative; }
 
 .owl-item {
   background-image: url(../img/home_slider.jpg);
@@ -78,13 +77,22 @@ html {
   position: absolute;
   top: 50%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 1; }
 
 .home-slider-btn-left {
   margin-left: 7rem; }
 
 .home-slider-btn-right {
   margin-right: 7rem; }
+
+.customPrevBtn:hover .nav_path,
+.customPrevBtn:hover .nav_arrow {
+  fill: url(#custom_prev); }
+
+.customNextBtn:hover .nav_path,
+.customNextBtn:hover .nav_arrow {
+  fill: url(#custom_next); }
 
 .topbar {
   background: #350a4e;

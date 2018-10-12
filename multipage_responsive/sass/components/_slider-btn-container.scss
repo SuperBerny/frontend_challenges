@@ -4,6 +4,7 @@
   top: 50%;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .home-slider-btn {
@@ -16,8 +17,14 @@
     margin-right: 7rem;
   }
 
-  // svg:hover,stop:first-child {
-  //   stop-color: #ef556d;
-  // }
+}
 
+.customPrevBtn:hover .nav_path,
+.customPrevBtn:hover .nav_arrow {
+  fill: url(#custom_prev);
+}
+
+.customNextBtn:hover .nav_path,
+.customNextBtn:hover .nav_arrow {
+  fill: url(#custom_next);
 }
