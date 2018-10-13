@@ -13,6 +13,9 @@ html {
   max-width: 57%;
   margin: 0 auto; }
 
+.u-display-flex {
+  display: flex; }
+
 .nav {
   background: rgba(53, 10, 78, 0.6);
   width: 100%;
@@ -65,7 +68,7 @@ html {
   position: relative; }
 
 .owl-item {
-  background-image: url(../img/home_slider.jpg);
+  background-image: linear-gradient(rgba(141, 79, 255, 0.4), rgba(141, 79, 255, 0.4)), url(../img/home_slider.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -76,7 +79,6 @@ html {
   width: 100%;
   position: absolute;
   top: 50%;
-  display: flex;
   justify-content: space-between;
   z-index: 1; }
 

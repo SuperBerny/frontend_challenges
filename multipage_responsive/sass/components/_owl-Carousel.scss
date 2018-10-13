@@ -4,11 +4,12 @@
     height: 100%;
     width: 100%;
     position: relative;
-    // z-index: -1;
   }
 
   &-item {
-    background-image: url(../img/home_slider.jpg);
+    background-image: linear-gradient(
+      rgba($linear-purple, 0.4),
+      rgba($linear-purple, 0.4)), url(../img/home_slider.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
