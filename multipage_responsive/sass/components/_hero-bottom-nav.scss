@@ -17,18 +17,18 @@
     white-space: nowrap;
 
     //transitions
-    -webkit-transition: all 400ms ease-in-out;
-    -moz-transition: all 400ms ease-in-out;
-    -ms-transition: all 400ms ease-in-out;
-    -o-transition: all 400ms ease-in-out;
-    transition: all 400ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 
     img {
-      -webkit-transition: all 800ms ease-in-out;
-      -moz-transition: all 800ms ease-in-out;
-      -ms-transition: all 800ms ease-in-out;
-      -o-transition: all 800ms ease-in-out;
-      transition: all 800ms ease-in-out;
+      -webkit-transition: all 400ms ease-in-out;
+      -moz-transition: all 400ms ease-in-out;
+      -ms-transition: all 400ms ease-in-out;
+      -o-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out;
     }
 
     &:first-child {
@@ -51,6 +51,19 @@
       background: $primary-orange;
       color: white;
       
+      img {
+        -webkit-filter: brightness(200%) grayscale(100%);
+        -moz-filter: brightness(200%) grayscale(100%);
+        -ms-filter: brightness(200%) grayscale(100%);
+        -o-filter: brightness(200%) grayscale(100%);
+          filter: brightness(200%) grayscale(100%);
+      }
+    }
+
+    &.active {
+      background: $primary-orange;
+      color: white;
+
       img {
         -webkit-filter: brightness(200%) grayscale(100%);
         -moz-filter: brightness(200%) grayscale(100%);

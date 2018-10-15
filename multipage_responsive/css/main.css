@@ -32,17 +32,17 @@ html {
     align-items: center;
     cursor: pointer;
     white-space: nowrap;
-    -webkit-transition: all 400ms ease-in-out;
-    -moz-transition: all 400ms ease-in-out;
-    -ms-transition: all 400ms ease-in-out;
-    -o-transition: all 400ms ease-in-out;
-    transition: all 400ms ease-in-out; }
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; }
     .bottom-nav-tab img {
-      -webkit-transition: all 800ms ease-in-out;
-      -moz-transition: all 800ms ease-in-out;
-      -ms-transition: all 800ms ease-in-out;
-      -o-transition: all 800ms ease-in-out;
-      transition: all 800ms ease-in-out; }
+      -webkit-transition: all 400ms ease-in-out;
+      -moz-transition: all 400ms ease-in-out;
+      -ms-transition: all 400ms ease-in-out;
+      -o-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out; }
     .bottom-nav-tab:first-child {
       border-top-left-radius: 94px; }
     .bottom-nav-tab:last-child {
@@ -57,6 +57,15 @@ html {
       background: #fa9e1c;
       color: white; }
       .bottom-nav-tab:hover img {
+        -webkit-filter: brightness(200%) grayscale(100%);
+        -moz-filter: brightness(200%) grayscale(100%);
+        -ms-filter: brightness(200%) grayscale(100%);
+        -o-filter: brightness(200%) grayscale(100%);
+        filter: brightness(200%) grayscale(100%); }
+    .bottom-nav-tab.active {
+      background: #fa9e1c;
+      color: white; }
+      .bottom-nav-tab.active img {
         -webkit-filter: brightness(200%) grayscale(100%);
         -moz-filter: brightness(200%) grayscale(100%);
         -ms-filter: brightness(200%) grayscale(100%);

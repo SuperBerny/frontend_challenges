@@ -11,13 +11,13 @@ $(document).ready(function(){
     smartSpeed: 1200
   });
 
- customNext.click(function(){
-    owl.trigger('next.owl.carousel');
-  });
-  
   customPrev.click(function() {
     owl.trigger('prev.owl.caorusel');
   });
 
+ customNext.click(function(){
+    owl.trigger('next.owl.carousel');
+  });
+  
 });
 
