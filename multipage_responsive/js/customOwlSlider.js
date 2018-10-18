@@ -17,7 +17,8 @@ $(document).ready(function(){
 
  customNext.click(function(){
     owl.trigger('next.owl.carousel');
+
   });
-  
+
 });
 

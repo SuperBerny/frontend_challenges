@@ -15,8 +15,74 @@
     background-position: center center;
     width: 100%;
     height: 100%;
+
   }
 
 }
 
 
+// Hero text flip and button
+
+.flipText {
+ 
+  &-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+
+  }
+
+  &-wrapper {
+    height: 40%;
+    width: 40%;
+    perspective: 800px;
+  }
+
+  &-card {
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+    // transition: transform 1.5s;
+  }
+
+  &-front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+    backface-visibility: hidden;
+  }
+
+  &-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+    transform: rotateX(-180deg);
+    backface-visibility: hidden;
+  }
+
+  &-animation {
+    animation: flipX;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes flipX {
+    0% {
+      transform: rotateX(0deg);
+    }
+
+    100% {
+      transform: rotateX(-180deg);
+    }
+  }
+
+}
