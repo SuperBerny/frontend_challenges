@@ -58,6 +58,12 @@
     background-color: white;
 
     backface-visibility: hidden;
+
+    & h2 {
+      font-family: 'Beyond';
+      font-size: 2rem;
+
+    }
   }
 
   &-back {
@@ -69,10 +75,11 @@
     backface-visibility: hidden;
   }
 
-  &-animation {
+  &-card:hover {
     animation: flipX;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
   }
 
   @keyframes flipX {

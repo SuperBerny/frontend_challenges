@@ -9,6 +9,10 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+@font-face {
+  font-family: 'Beyond';
+  src: url("../fonts/beyond_the_mountains.otf") format("truetype"), url("../fonts/beyond_the_mountains.ttf") format("opentype"); }
+
 .u-center-container {
   max-width: 57%;
   margin: 0 auto; }
@@ -157,6 +161,9 @@ html {
   width: 100%;
   background-color: white;
   backface-visibility: hidden; }
+  .flipText-front h2 {
+    font-family: 'Beyond';
+    font-size: 2rem; }
 
 .flipText-back {
   position: absolute;
@@ -166,10 +173,11 @@ html {
   transform: rotateX(-180deg);
   backface-visibility: hidden; }
 
-.flipText-animation {
+.flipText-card:hover {
   animation: flipX;
   animation-duration: 2s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53); }
 
 @keyframes flipX {
   0% {
