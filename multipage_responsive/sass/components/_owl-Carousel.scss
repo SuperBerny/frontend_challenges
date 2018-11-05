@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -15%);
 
@@ -46,6 +46,7 @@
   &-card {
     width: 100%;
     height: 100%;
+    // background: white;
 
     transform-style: preserve-3d;
     // transition: transform 1.5s;
@@ -55,14 +56,39 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: white;
 
     backface-visibility: hidden;
 
-    & h2 {
-      font-family: 'Beyond';
-      font-size: 2rem;
+    h3 {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      font-size: 11.2rem;
+      text-transform: uppercase;
+      // font-weight: 900;
+      color: white;
+    }
 
+    h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      font-family: 'Beyond';
+      font-size: 9rem;
+      color: white;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    span {
+      background-color: white;
+      width: 4px;
+      height: 4px;
+      border-radius: 50px;
     }
   }
 
@@ -73,14 +99,39 @@
     background-color: lightgreen;
     transform: rotateX(-180deg);
     backface-visibility: hidden;
+
+    h3 {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+    }
+
+    h2 {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    span {
+      background-color: white;
+      width: 4px;
+      height: 4px;
+      border-radius: 50px;
+    }
   }
 
-  &-card:hover {
-    animation: flipX;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
-  }
+  // &-card:hover {
+  //   animation: flipX;
+  //   animation-duration: 2s;
+  //   animation-fill-mode: forwards;
+  //   transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+  // }
 
   @keyframes flipX {
     0% {
