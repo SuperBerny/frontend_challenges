@@ -188,24 +188,47 @@ html {
   width: 100%;
   background-color: lightgreen;
   transform: rotateX(-180deg);
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column; }
   .flipText-back h3 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -20%); }
+    font-family: 'Open Sans', sans-serif;
+    font-size: 6rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800; }
   .flipText-back h2 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%); }
-  .flipText-back a {
-    display: inline-block; }
-  .flipText-back span {
-    background-color: white;
-    width: 4px;
-    height: 4px;
-    border-radius: 50px; }
+    font-family: 'Beyond';
+    font-size: 5rem;
+    color: white; }
+
+.flipText-btn {
+  padding: 4rem;
+  width: 20rem;
+  text-decoration: none;
+  background-size: 300% 100%;
+  border-radius: 50%;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-color: linear-gradient(to right, #fa9e1b, #8d4fff); }
+
+.flipText-btn:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+
+.flipText-card:hover {
+  animation: flipX;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53); }
 
 @keyframes flipX {
   0% {
