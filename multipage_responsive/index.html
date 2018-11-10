@@ -177,7 +177,7 @@
     </div>
 
     <div id="hero-bottom-nav" class="hero-bottom-nav bottom-nav u-display-flex">
-      <div class="bottom-nav-hotels bottom-nav-tab">
+      <div class="bottom-nav-hotels bottom-nav-tab bottom-nav-clicked">
         <img src="img/suitcase.png" alt="Suitcase"> <span>Hotels</span>
       </div>
       <div class="bottom-nav-cars bottom-nav-tab">
@@ -197,6 +197,40 @@
       </div>
     </div>
   </section>
+
+  <section class="home-search-form">
+    <form action="#" class="search_form">
+      <div class="search_form-item">
+        <div class="search_form-label">Destination</div>
+        <input type="text">
+      </div>
+      <div class="search_form-item">
+        <div class="search_form-label">Check In</div>
+        <input type="text" placeholder="YY-MM-DD">
+      </div>
+      <div class="search_form-item">
+        <div class="search_form-label">Checkout</div>
+        <input type="text" placeholder="YY-MM-DD">
+      </div>
+      <div class="search_form-item">
+        <div class="search_form-label">Adults</div>
+        <select name="adults" class="search_form-select">
+          <option value="1">01</option>
+          <option value="2">02</option>
+          <option value="3">03</option>
+        </select>
+      </div>
+      <div class="search_form-item">
+        <div class="search_form-label">Children</div>
+        <select name="children" class="search_form-select">
+          <option value="0">00</option>
+          <option value="1">01</option>
+          <option value="2">02</option>
+          <option value="3">03</option>
+        </select>
+      </div>
+    </form>
+  </section>  
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="plugins/owlcarousel2-2.2.1/owl.carousel.js"></script>

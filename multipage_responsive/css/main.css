@@ -76,6 +76,18 @@ html {
         -o-filter: brightness(200%) grayscale(100%);
         filter: brightness(200%) grayscale(100%); }
 
+.home-search-form {
+  max-width: 100%;
+  height: 19.2rem;
+  background-image: linear-gradient(to right, #fa9e1b, #8d4fff); }
+
+.search_form {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .search_form-item:first-child {
+    flex: 1 0 30%; }
+
 .nav {
   background: rgba(53, 10, 78, 0.6);
   width: 100%;
