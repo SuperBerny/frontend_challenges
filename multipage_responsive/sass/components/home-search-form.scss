@@ -1,0 +1,27 @@
+.home-search-form {
+   max-width: 100%;
+   height: 19.2rem;
+   background-image: linear-gradient(to right, $linear-orange, $linear-purple);
+}
+
+.search_form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &-item {
+
+   }
+
+   &-item:first-child {
+      flex: 1 0 30%;
+   }
+
+   &-label {
+
+   }
+
+   &-select {
+
+   }
+}
